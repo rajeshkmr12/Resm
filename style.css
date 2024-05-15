@@ -62,12 +62,12 @@ body {
 	background-image: url('./Images/heroImg3.avif'); 
 	background-repeat: no-repeat; 
 	background-size: 100% 100%; 
-	width: 100%; 
-	height: 100vh; 
+	width: 50%; 
+	height: 50vh; 
 	display: flex; 
 	align-items: center; 
 	justify-content: start; 
-	margin: 4.8rem 0; 
+	margin: 2.8rem 0; 
 } 
 
 .hero .intro { 
@@ -86,7 +86,7 @@ body {
 .about { 
 	display: flex; 
 	align-items: center; 
-	background-image: linear-gradient(45deg, #363D73, #2794B3); 
+	background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C); 
 	justify-content: space-between; 
 	width: 100%; 
 } 
@@ -339,4 +339,265 @@ body {
 
 .blue-text { 
 	color: #363D73; 
+}
+.right-aligned-image {
+    width: 20px; /* Set the width to 20 pixels */
+    height: auto; /* Maintain the aspect ratio */
+}
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-aligned-image {
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.popup {
+    position: fixed;
+    width: 800px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    /* Center the popup */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.portfolio-content1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.panel {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.panel i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.panel h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.panel p {
+    font-size: 14px;
+}
+
+
+.my-card.port-card {
+    transition: all 0.3s ease;
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    /* Default background color */
+    background-color: #ffffff; /* White */
+}
+
+.my-card.port-card:hover {
+    background-color: #e6e6e6; /* Light grey background on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    transform: scale(1.05); /* Slightly increases the size */
+    /* Add any other color changes you want here */
+    border: 1px solid #00ffff; /* Blue border for example */
+}
+
+.accordion-title {
+    /* Styles for the title of each accordion item */
+    cursor: pointer;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-title:hover + .accordion-content,
+.accordion-title:focus + .accordion-content {
+    max-height: 100px; /* Adjust as needed */
+}
+
+.accordion {
+    border: 1px solid #dddddd; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensures the content is clipped to the container */
+}
+
+.accordion-item {
+    border-bottom: 1px solid #39e4e1; /* Light grey border between items */
+    padding: 10px; /* Padding around the content */
+    background-color: #ffffff; /* White background */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.accordion-item:last-child {
+    border-bottom: none; /* Removes the border from the last item */
+}
+
+.accordion-item:hover {
+    background-color: #eff5f4; /* Light grey background on hover */
+}
+
+.neu-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.neu-card {
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px #a3a3a3,
+                -8px -8px 15px #ffffff;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.neu-card:hover {
+    box-shadow: inset 8px 8px 15px #a3a3a3,
+                inset -8px -8px 15px #ffffff;
+}
+
+.neu-icon {
+    font-size: 3rem;
+    color: #7b7b7b;
+    margin-bottom: 10px;
+}
+
+.neu-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.neu-description {
+    font-size: 1rem;
+    color: #666;
+}
+.service {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    margin-bottom: 20px; /* Add some spacing between service sections */
+}
+
+.service-icon {
+    background-color: #f8f9fa; /* Light gray background for the icon */
+    padding: 20px; /* Add padding around the icon */
+}
+
+.service-icon i {
+    font-size: 36px; /* Adjust the icon size */
+    color: #333; /* Set the icon color */
+}
+
+.service-content {
+    flex: 1; /* Allow the content to take up remaining space */
+    padding: 20px; /* Add padding around the content */
+}
+
+.service-content h2 {
+    margin: 0;
+    font-size: 24px; /* Set the heading size */
+    color: #333; /* Set the heading color */
+    margin-bottom: 10px; /* Add some spacing below the heading */
+}
+
+.service-content ul {
+    list-style-type: disc; /* Use disc bullets for the list */
+    padding-left: 20px; /* Add some spacing for the bullets */
+}
+
+.service-content li {
+    font-size: 16px; /* Set the list item font size */
+    color: #666; /* Set the list item color */
+}
+.about-image1 {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #8dc1f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-image1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-image1 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-image1 li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Styling for video editing section */
+.video-editing {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Light gray background color */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin-bottom: 30px; /* Add some spacing between sections */
+}
+
+.video-editing-icon {
+    background-color: #4CAF50; /* Green background color for the icon */
+    color: #fff; /* White color for the icon */
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.video-editing-icon i {
+    font-size: 36px; /* Icon size */
+}
+
+.video-editing-content {
+    margin-left: 20px; /* Add some spacing between the icon and content */
+}
+
+.video-editing-content h2 {
+    margin: 0;
+    font-size: 24px; /* Heading size */
+    color: #333; /* Heading color */
+}
+
+.video-editing-content p {
+    font-size: 16px; /* Paragraph size */
+    color: #666; /* Paragraph color */
+}
+
+.video-editing-content ul {
+    margin-top: 10px; /* Add some spacing above the list */
+}
+
+.video-editing-content ul li {
+    font-size: 16px; /* List item size */
+    color: #666; /* List item color */
+    list-style-type: disc; /* Use disc bullets */
 }

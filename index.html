@@ -73,8 +73,10 @@
 				<button class="btn common-btn">Hire Me</button> 
 				<button class="btn ghost-btn">Get Resume</button> 
 			</div> 
+			<img src="images\management-consulting.png" alt="Descriptive Text" width="50" height="50" class="right-aligned-image">
 		</div> 
-	</section> 
+	</section>
+	
 
 	<!-- Portfolio Section -->
 	<section class="portfolio" id="portfolio"> 
@@ -84,20 +86,21 @@
 		<div class="portfolio-content"> 
 			<div class="my-row"> 
 				<div class="my-col"> 
-					<div class="my-card port-card"> 
-						<div class="image"> 
-							<img src="./Images/designImage2.avif"
-								alt="Web Design Image"> 
+					<div class="my-card port-card" id="card1" data-target="popup1"> 
+						<div class="image-container"> 
+							<img src="images\icons8-design.gif" alt="Descriptive Text" class="left-aligned-image">
 						</div> 
-						<h3 class="greet-heading blue-text">Web Design</h3> 
+													<h3 class="greet-heading blue-text">Web Design</h3> 
+
 						<p class="small-para blue-text">Designing</p> 
+
 					</div> 
-				</div> 
+				</div>
 				<div class="my-col"> 
-					<div class="my-card port-card"> 
-						<div class="image"> 
-							<img src="./Images/webDevelopment2.avif"
-								alt="Web Development Image"> 
+					<div class="my-card port-card" id="card2" data-target="popup2"> 
+						<div class="image-container"> 
+							<img src="images/icons8-internet.gif" alt="Descriptive Text" class="left-aligned-image">
+
 						</div> 
 						<h3 class="greet-heading blue-text"> 
 							Web Development 
@@ -106,20 +109,21 @@
 					</div> 
 				</div> 
 				<div class="my-col"> 
-					<div class="my-card port-card"> 
-						<div class="image"> 
-							<img src="./Images/SEOImage2.avif" alt="SEO Image"> 
+					<div class="my-card port-card" id="card3" data-target="popup3"> 
+						<div class="image-container"> 
+							<img src="images\icons8-seo.gif" alt="SEO Image"> 
 						</div> 
 						<h3 class="greet-heading blue-text">SEO</h3> 
 						<p class="small-para blue-text">Optimization</p> 
 					</div> 
 				</div> 
+				
 			</div> 
 			<div class="my-row"> 
 				<div class="my-col"> 
-					<div class="my-card port-card"> 
-						<div class="image"> 
-							<img src="./Images/contentImage2.avif"
+					<div class="my-card port-card" id="card4" data-target="popup4"> 
+						<div class="image-container"> 
+							<img src="images\icons8-pencil.gif"
 								alt="Content Writting Image"> 
 						</div> 
 						<h3 class="greet-heading blue-text"> 
@@ -129,9 +133,9 @@
 					</div> 
 				</div> 
 				<div class="my-col"> 
-					<div class="my-card port-card"> 
-						<div class="image"> 
-							<img src="./Images/wordpressImage2.avif"
+					<div class="my-card port-card" id="card5" data-target="popup5"> 
+						<div class="image-container"> 
+							<img src="images\icons8-wordpress.gif"
 								alt="Wordpress Image"> 
 						</div> 
 						<h3 class="greet-heading blue-text"> 
@@ -143,9 +147,9 @@
 					</div> 
 				</div> 
 				<div class="my-col"> 
-					<div class="my-card port-card"> 
-						<div class="image"> 
-							<img src="./Images/videoEditing2.avif"
+					<div class="my-card port-card"  id="card6" data-target="popup6"> 
+						<div class="image-container"> 
+							<img src="images\icons8-video-editing.gif"
 								alt="Video Editing Image"> 
 						</div> 
 						<h3 class="greet-heading blue-text"> 
@@ -157,6 +161,192 @@
 			</div> 
 		</div> 
 	</section> 
+	<div id="popup1" class="popup" style="display:none;">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">Web Design</h1> 
+    </div>
+    <div class="portfolio-content1">
+        <div class="panel">
+            <i class="fas fa-paint-brush"></i>
+            <h2>UI/UX Design</h2>
+            <p>Creating intuitive and visually appealing user interfaces.</p>
+        </div>
+        <div class="panel">
+            <i class="fas fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>Building responsive and interactive websites using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="panel">
+            <i class="fas fa-mobile-alt"></i>
+            <h2>Mobile Design</h2>
+            <p>Designing user-friendly mobile app interfaces for various platforms.</p>
+        </div>
+        <div class="panel">
+            <i class="fas fa-layer-group"></i>
+            <h2>Graphic Design</h2>
+            <p>Crafting visual content to communicate messages effectively.</p>
+        </div>
+    </div>
+</div>
+
+<div id="popup2" class="popup" style="display:none;">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">Web Development Services</h1> 
+    </div>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-title">
+                <i class="fas fa-server"></i>
+                <h2>Backend Development</h2>
+            </div>
+            <div class="accordion-content">
+                <p> > Robust server, database, and application logic.</p>
+            </div>
+			<div class="accordion-title">
+				<i class="fas fa-laptop-code"></i>
+				<h2>Frontend Development</h2>
+            </div>
+            <div class="accordion-content">
+                <p> > Responsive and dynamic user experiences.</p>
+            </div>
+			<div class="accordion-title">
+                <i class="fas fa-network-wired"></i>
+                <h2>API Integration</h2>
+            </div>
+            <div class="accordion-content">
+                <p> > Connecting applications with third-party services.</p>
+            </div>
+			<div class="accordion-title">
+                <i class="fas fa-lock"></i>
+                <h2>Security</h2>
+            </div>
+            <div class="accordion-content">
+                <p> > Keeping your website safe from threats.</p>
+            </div>
+        </div>
+        <!-- Repeat for other services -->
+    </div>
+</div>
+<div id="popup3" class="popup" style="display:none;">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">SEO</h1> 
+    </div>
+    <div class="neu-container">
+        <div class="neu-card">
+            <div class="neu-icon"><i class="fas fa-desktop"></i></div>
+            <h2 class="neu-title">Responsive Design</h2>
+            <p class="neu-description">Crafting visually stunning designs that adapt to any device.</p>
+        </div>
+		<div class="neu-card">
+			<div class="neu-icon"><i class="fas fa-search"></i></div>
+			<h2 class="neu-title">Keyword Optimization</h2>
+			<p class="neu-description">Identifying and targeting strategic keywords to drive traffic to your website.</p>
+		</div>
+		
+		<div class="neu-card">
+			<div class="neu-icon"><i class="fas fa-chart-line"></i></div>
+			<h2 class="neu-title">Analytics and Reporting</h2>
+			<p class="neu-description">Using data analytics to refine SEO strategies and report on performance metrics.</p>
+		</div>
+        <!-- Repeat for other portfolio items -->
+    </div>
+</div>
+
+<div id="popup4" class="popup" style="display:none;">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">Content Writing</h1> 
+    </div>
+	<div class="accordion-item">
+        <div class="accordion-title">
+            <i class="fas fa-pencil-alt"></i>
+            <h2>Content Writing</h2>
+        </div>
+        <div class="accordion-content content-writing">
+            <p>Engaging and SEO-optimized content for websites, blogs, and social media.</p>
+        </div>
+    </div>
+	<div class="accordion-item">
+		<div class="accordion-title">
+			<i class="fas fa-pencil-alt"></i>
+			<h2>Copywriting</h2>
+		</div>
+		<div class="accordion-content content-writing">
+			<p>Compelling and persuasive copy for advertisements, marketing materials, and product descriptions.</p>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<div class="accordion-title">
+			<i class="fas fa-pencil-alt"></i>
+			<h2>Editing and Proofreading</h2>
+		</div>
+		<div class="accordion-content content-writing">
+			<p>Thorough editing and proofreading services to ensure accuracy, clarity, and consistency in written content.</p>
+		</div>
+	</div>
+</div>
+
+<div id="popup5" class="popup" style="display:none;">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">Content Writing</h1> 
+    </div>
+	<div class="service">
+		<div class="service-icon">
+			<i class="fab fa-wordpress"></i>
+		</div>
+		<div class="service-content">
+			<h2>WordPress Development</h2>
+			<p>Custom WordPress theme development tailored to your brand and design requirements.</p>
+			<p>WordPress plugin development to add custom functionality to your website.</p>
+			<p>WordPress website customization and optimization for improved performance and user experience.</p>
+		</div>
+	</div>
+	
+</div>
+<div id="popup6" class="popup" style="display:none;">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">Video Editing</h1> 
+    </div>
+	<div class="video-editing">
+		<div class="video-editing-icon">
+			<i class="fas fa-video"></i>
+		</div>
+		<div class="video-editing-content">
+			<h2>Video Editing Services</h2>
+			<p>Professional video editing for various purposes, including:</p>
+			<ul>
+				<li>Corporate videos</li>
+				<li>Wedding videos</li>
+				<li>Social media content</li>
+				<li>YouTube videos</li>
+			</ul>
+			<p>Expertise in using industry-standard video editing software to create stunning visual content.</p>
+		</div>
+	</div>
+	
+</div>
+        <!-- <div class="feature">
+            <i class="fas fa-laptop-code"></i>
+            <h2>Frontend Development</h2>
+            <p>Responsive and dynamic user experiences.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-network-wired"></i>
+            <h2>API Integration</h2>
+            <p>Connecting applications with third-party services.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-lock"></i>
+            <h2>Security</h2>
+            <p>Keeping your website safe from threats.</p>
+        </div> -->
+    <!-- </div>
+</div> -->
 
 	<!-- About Section -->
 	<section id="about" class="about"> 
@@ -182,9 +372,17 @@ cutting-edge projects.
 				conquer the world of coding. 
 			</p> 
 		</div> 
-		<div class="about-image"> 
-			<img src="./Images/heroImg2.avif" alt="About Image"> 
-		</div> 
+		<div class="about-image1">
+			<h2>Professional Profile</h2>
+			<ul>
+				<li>Experienced IT developer</li>
+        <li>Passionate about coding</li>
+        <li>Always eager to learn new technologies</li>
+        <li>Detail-oriented and problem solver</li>
+        <li>Strong communication skills</li>
+        <li>Team player and collaborator</li>
+			</ul>
+		</div>
 	</section> 
 
 	<!-- Services Section -->

@@ -15,3 +15,41 @@ hamburger.addEventListener('click', function () {
 		menu.style.display = "block"
 	} 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var cards = document.querySelectorAll('.my-card.port-card');
+
+    cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            var targetId = card.getAttribute('data-target');
+            var popup = document.getElementById(targetId);
+            popup.style.display = 'block';
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... previous code ...
+
+    var closeButtons = document.querySelectorAll('.popup .close');
+
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var popup = button.closest('.popup');
+            popup.style.display = 'none';
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var images = document.querySelectorAll('.static-image');
+
+    images.forEach(function(image) {
+        image.addEventListener('mouseover', function() {
+            image.src = image.getAttribute('data-gif');
+        });
+        image.addEventListener('mouseout', function() {
+            image.src = "images/icons8-pencil.png";
+        });
+    });
+});
